@@ -1,16 +1,14 @@
 class Flexocks < Formula
-  desc "Descripción corta de tu aplicación"
-  homepage "https://github.com/flexocks/homebrew-flexocks" # Página principal de tu app
-  url "https://github.com/flexocks/homebrew-flexocks/blob/main/flexocks.pkg" # URL donde está alojado tu archivo
-  sha256 "hash_del_archivo" # Puedes obtener esto con el comando 'shasum -a 256 Flexocks.pkg'
-  version "1.0.0" # Versión de tu software
+  desc "Conexion Proxy SOCKS configurable"
+  homepage "https://github.com/flexocks/homebrew-flexocks"
+  url "https://github.com/flexocks/homebrew-flexocks/flexocks.pkg" 
+  sha256 "656f91ef4a121d2a780fd031a427484c423c93858755ccd9a4c5d00bbd0a1dd9"
+  version "beta rc1"
 
   def install
-    # Instrucciones de instalación, por ejemplo:
     system "sudo", "installer", "-pkg", "Flexocks.pkg", "-target", "/"
   end
 
   test do
-    # Opcional: comandos para probar que la instalación fue exitosa
   end
 end
